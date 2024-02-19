@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, th {
+            border: 1px solid #ccc;
+        }
+        td, th {
+            padding: 10px 20px;
+        }
+        td:last-child {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <table> <!-- 1. 행 숫자만큼 tr를 만든다.
+                 2. 열 숫자만큼 tr태그 안에 th태그나 td태그를 넣는다.
+                 3. 행 기준으로 문자를 순서대로 넣는다.
+                  ex) 개인정보와 이름은 같은 행이다.
+                 4. 열 기준 th태그 위치에 맞게 문자를 넣는다.
+                  ex) 이름, 학과/학번, 연락처는 같은 열이므로 두번째 th에 적는다.
+                 5. rowspan(세로로 합치기), colspan(가로로 합치기)를 이용해 표를 합친다.  -->
+        <caption>
+            <h1>수급 국원 지원 양식</h1>
+        </caption>
+            <tr>
+                <th rowspan="3">개인정보</th>
+                <th>이름</th>
+                <td></td>
+            </tr>
+            <tr>
+                <!-- <th></th> -->
+                <th>학과/학번</th>
+                <td></td>
+            </tr>
+            <tr>
+                <!-- <th></th> -->
+                <th>연락처</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>지원분야</th>
+                <th colspan="2"></th>
+                <!-- <td></td> -->
+            </tr>
+    </table>
+</body>
+</html>

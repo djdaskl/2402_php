@@ -1,0 +1,53 @@
+.color-main{
+    color: cornflowerblue;
+}
+.color-hex{
+    color:#ff0000;
+}
+.color-rgb{
+    color: rgb(0, 255, 255);
+}
+.color-rgba{
+    color: rgb(0, 255, 255, 0.5); /*숫자가 작아질수록 투명하게 됨*/
+}
+.color-hsle{
+    color: rgb(0, 255, 255, 10%); /*채도,명도 설정값*/
+}
+/*텍스트 정렬*/
+#p-center{
+    text-align: center;
+}
+#p-right{
+    text-align: right;
+}
+#p-left{
+    text-align: left;
+}
+.div-center{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+}
+.div-center p{
+    text-align: center;
+    line-height: 200px; /*부모태그의 높이를 똑같이 맞추면 정중앙에 있는것 처럼 보임*/
+}
+.capitalize{
+    text-transform: capitalize; /*첫번째 글자만 대문자로 보이는 스타일*/
+}
+.uppercase{
+    text-transform: uppercase; /*문장 전체를 대문자로 바꾸는 스타일*/
+}
+.lowercase{
+    text-transform: lowercase; /*문장 전체를 소문자로 바꾸는 스타일*/
+}
+.letter-spacing{
+    letter-spacing: 2rem; /*글자 사이의 간격을 조절하는 스타일*/
+}
+.word-spacing{
+    word-spacing: 2rem; /*단어 사이의 간격을 조절하는 스타일*/
+}
+.shadow {
+    text-shadow: 5px 20px 3px #FF0000;
+    /*가로위치, 세로위치, 그림자크기, 색상 순으로 설정, -를 붙이면 반대로 설정가능*/
+}

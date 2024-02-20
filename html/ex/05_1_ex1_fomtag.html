@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--
+    form 태그 : 정보를 제출하기 위한 태그
+-->
+<form action=""> <!-- 현재는 비워둠-->
+    <!--
+        input 태그 : 다양한 방법으로 데이터를 받기위한 태그
+        ** 속성 **
+        Text : 일반적인 텍스트를 입력할 수 있는 값
+        password : 일반적인 텍스트를 입력할 수 있지만 안보임(암호화 되어있음)
+        email : 이메일을 입력할 수 있는 값 (@만 붙이면 다 가능, 완벽하지 않음)
+    -->
+    <label for="input-id">ID</label>
+    <input type="text" id="input-id" required placeholder="ID를 입력하세요.">
+    <!-- required는 입력창에 입력을 안할시 경고안내문이 나옴.
+         입력창에 아무것도 없으면 안 넘어감.
+         placeholder는 입력창 안에 알림글이 나오게 하는 기능.-->
+    <br>
+    <label for="input-password">PW</label>
+    <input type="text" id="input-password" required placeholder="PW를 입력하세요.">
+    <br>
+    <input type="email" readonly value="이메일이다."> <!-- readonly는 유저가 건드릴수 없게 하는 기능, 읽기기능만 가능!-->
+    <button type="submit">제출</button>
+    <br>
+    <input type="checkbox" name="food" id="chk-1">
+    <label for="chk-1">돈까스</label><br>
+    <input type="checkbox" name="food" id="chk-2">
+    <label for="chk-2">디진다돈까스</label><br>
+    <input type="checkbox" name="food" id="chk-3">
+    <label for="chk-3">불돈까스</label>
+    <!-- 두번 클릭을 하면 선택이 풀림-->
+    <br><br>
+    <input type="date"> <!-- 달력, 날짜 태그-->
+    <br><br>
+    <input type="range" min="0" max="10"> <!-- 게이지 창?을 만드는 태그, 최소와 최대 설정이 가능-->
+    <br><br>
+    <input type="number" min="0" max="10"> <!-- 숫자만 입력 가는한 태그, 최소와 최대 설정이 가능-->
+    <br><br>
+    <input type="radio" name="fruit" id="radio-1"> <!-- name를 무조건 일치시키기 >> 안시키면 두개 다 선택됨-->
+    <label for="radio-1">사과</label><br>
+    <input type="radio" name="fruit" id="radio-2">
+    <label for="radio-2">용과</label>
+    <!-- 두번 클릭을 하면 선택이 안풀림-->
+    <br><br>
+    <!-- 요즘은 잘 안쓰는 태그들 >> 디자인하기에 적합하지 않음-->
+    <input type="button" value="인풋버튼"><br>
+    <input type="submit" value="인풋 서브밋"><br>
+    <input type="reset" value="인풋 reset"><br>
+    <br><br>
+    <textarea cols="30" rows="20" style="width: 175px; height: 90px;"></textarea>
+    <br><br>
+    <select name="poketmon" id="poketmon">
+        <option value="0">피카츄</option> <!-- value에 넣는 값은 무조건 숫자로만 다른 문자를 넣으면 오류가 남-->
+        <option value="1">라이츄</option>
+        <option value="2">파이리</option>
+        <option value="3">꼬부기</option>
+    </select>
+    <br><br>
+    <fieldset> <!--그냥 꾸며주기용, 나누기용-->
+        <legend>정보입력</legend>
+        <label for="id">ID :</label>
+        <input type="text">
+    </fieldset>
+    <br><br>
+    <!-- button 태그-->
+    <button type="button">botton</button> <!-- 일반적인 버튼 아무런 기능이 없음-->
+    <button type="submit">submit</button> <!-- 데이터를 보는 기능의 버튼-->
+    <button type="reset">reset</button> <!-- 초기화하는 버튼-->
+</form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+.div-border {
+    background-color: #000;
+}
+.h1-dsd {
+    color: aliceblue;
+}
+.p1-fkdl {
+    color: rgb(197, 115, 85);
+}
+.div3-color {
+    text-align: left;
+    background-color: #000;
+}
+.div3-color {
+    color: aliceblue;
+}
+.p2-color {
+    color: red;
+}
+span {
+    color: blue;
+}
+.div4-color {
+    color: red;
+}
+.div5-color {
+    color: red;
+}
+.div2-color, .div6-color {
+    text-align: center;
+    border: 1px solid #5c5555;
+}
+.p3-color {
+    font-size: 10px;
+}

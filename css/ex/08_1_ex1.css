@@ -1,0 +1,88 @@
+h1 {
+    margin: 10px;
+    /*너비조절*/
+    width: 100px;
+    /*높이 조절*/
+    height: 150px;
+}
+p {
+    background-color: chocolate;
+    width: 50vw;
+    height: 30vh;
+}
+
+.size-div {
+    width: 500px;
+    height: 200px;
+}
+.size-div p {
+    background-color: chocolate;
+    width: 50vw;
+    height: 50vh;
+}
+
+.container {
+    width: 300px;
+    border: 3px solid #000 ;
+}
+
+div {
+    border: 3px solid red;
+}
+.div-1 {
+    /* 상하좌우 5px안으로 들어감*/
+    margin: 5px;
+}
+/.div-2 {
+    /*상하로는 5px. 좌우로는 10px*/
+    margin: 5px 10px;
+}
+.div-3 {
+    /* 위로5px 좌우로는 10px 아래로는 15px*/
+    margin: 5px 10px 15px;
+}
+.div-4 {
+    /*위로 5, 우로 10 아래로는 15px 안으로들어감*/
+    margin: 5px 10px 15px 20px;
+}
+.div-5 {
+    width: 100px;
+    margin: auto;
+}
+
+.padding-div-1 {
+    padding: 5px;
+}
+.padding-div-2 {
+    padding: 5px 10px;
+}
+.padding-div-3 {
+    padding: 5px 10px 15px;
+}
+.padding-div-4 {
+    padding: 5px 10px 15px 20px;
+}
+.div-shadow {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    /*수평거리, 수직거리, 흐림정도, 번짐정도, 색상, 그림자 방향(생략가능)*/
+    box-shadow: 10px 20px 10px 10px yellow inset;
+}
+
+.div-content {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    /*콘텐츠 영역에만으로 요소의 크기(width, height)를 결정*/
+    box-sizing: content-box;
+}
+.div-bordar {
+    /*태두리+패딩+ 콘텐츠+ 영역으로 요소의 크기(width, height)를 결정*/
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+}

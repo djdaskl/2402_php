@@ -1,0 +1,53 @@
+body {
+    background-image: url(../img/docker.tmg.png);
+    background-attachment: fixed;
+    background-size: contain;
+}
+div {
+    height: 300vb;
+}
+div {
+    border: 5px solid #000;
+    margin: 5px;
+    width: 200px;
+    height: 100px;
+    background-image: url(../img/docker.tmg.png);
+}
+.auto {
+    /* 원본 크기를 유지(default)*/
+    background-size: auto;
+}
+.contain {
+    /*요소 안에 배경 이미지가 다 들어오도록 확대 및 축소 */
+    background-size: contain;
+}
+.cover {
+    /*width를 기준으로 사진을 확대 또는 축소 하는 태그*/
+    background-size: cover;
+}
+.px {
+    /* 하나의 값을 주어 너비를 지정하고, 높이는 너비에 맞게 자동 계산*/
+    background-size: 10px;
+}
+.vw {
+    /*이미지의 비율에 맞도록 조절*/
+    background-size: 50%;
+}
+.position-center {
+    /*사진과 요소의 중심에 배치가된다*/
+    background-position: center;
+}
+.position-center {
+    /*가운데지정*/
+    background-position: center;
+}
+.position-top-right {
+    background-position: top 10px right 10px;
+
+}
+
+ /*이미지의 반복 지정*/
+.no-repeat {
+    /*반복하지않음*/
+    background-repeat: no-repeat;
+}

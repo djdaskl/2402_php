@@ -1,0 +1,59 @@
+
+
+div {
+    padding: 20px;
+}
+.main {
+    width: 300px;
+    background-color: coral;
+}
+.div-static {
+    background-color: cornsilk;
+    position: static; /*일반적인 문서의 흐름에 맞춰 고정을 하는 값*/
+}
+.div-relative {
+    background-color: rgb(177, 177, 42);
+    position: relative; /*static과는 비슷하지만 위치 조절을 할 수 있다*/
+}
+/*#rel2 {
+    top: 30px;
+    left: 30px;
+}*/
+.div-absolite1, .div-absolite2 {
+    background-color: mintcream;
+}
+.div-absolite1 {
+    position: absolute;
+    background-color: aqua;
+    top: 0;
+}
+.div-absolite2 {
+    position: absolute;
+    background-color: rgb(80, 10, 10);
+    top: 100px;
+}
+.div-fixed {
+    background-color: blue;
+    position: fixed;
+    bottom: 10%;
+    right: 10%; /*아래 하단 광고나, SNS 알림 작업으로 많이 사용됨*/
+}
+.div-sticky {
+    background-color: rgb(122, 122, 56);
+    position: sticky;
+    top: 0;
+    /*브라우저 화면을 스크롤 할 경우 나타나는 효과
+    자신의 위치를 설정값 그대로 고정*/
+}
+.div-fixed2 {
+    position: fixed;
+    background-color: cornflowerblue;
+    bottom: 10%;
+    right: 15%;
+}
+.div-fixed3 {
+    position: fixed;
+    background-color: darkgoldenrod;
+    bottom: 10%;
+    right: 20%;
+}

@@ -1,0 +1,24 @@
+/*연결 선택자*/
+/*공백, >, +, ~ 등 결합자(combinator)를 이용해 특정 요소를 선택*/
+/*후손 결합자 : 공백 결합자를 이용해서 선택*/
+header div span {
+    color: blue;
+}
+
+/*자식 결합자 : '>'경합자를 이용해서 자식요소 선택*/
+header > span {
+    color: crimson;
+}
+
+/*인접 형제 결합자 : '+' 결합자를 이용해서 첫번쨰 형제를 선태*/
+header + span {
+    color: blueviolet;
+}
+
+/*일반 형제 결합자 : '~'결합자를 이용해서 모든 형제를 선택*/
+header ~ span {
+    color: chartreuse;
+}
+
+/*속성 선택자 (Attridute selector)*/
+/*HTML 요소의 속성을 이용해서 특정 요소를 선택

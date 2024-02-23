@@ -1,0 +1,66 @@
+/*가상 선택자
+HTMl 요소의 상태에 따라 선택해 스타일을 지정하는 선택자
+기본형태 >> 선택자:가상클래스명*/
+/*:link : 아직 방문하지 않은 링크 요소를 선택*/
+a:link {
+    color: brown;
+}
+/*:visited : 방문한 적 있는 링크 요소를 선택*/
+a:visited {
+    color: blueviolet;
+}
+/*:hover : 마우스 커서가 올라가 있는 요소를 선택*/
+a:hover {
+    color: cornflowerblue;
+}
+/*:active : 링크를 클릭하고 있는 요소를 선택*/
+a:active {
+    background-color: darkcyan;
+}
+/*:focus : 포커스가 적용되어 있는 요소 선택*/
+input:focus {
+    border: 3px solid #df1c1c;
+    outline: none; /*포커스 시 기존의 기본 테두리가 사라짐*/
+}
+/*:checked : 체크괸 상태의 input 요소를 선택*/
+input:checked + label {
+    font-weight: 900;
+}
+/*:target : 문서 내부 링크의 현재 활성화 된 요소를 선택*/
+#p-1:target {
+    background-color: cornflowerblue;
+}
+#p-2:target {
+    background-color: #df1c1c;
+}
+/*:not(선택자) : 해당 선택자를 제외한 나머지 요소를 선택*/
+.container1 :not(span) {
+    color: #970c0c;
+}
+/*:nth-chid(숫자n) : n번째 자식 요소를 선택*/
+ul :nth-child(3) {
+    color: cornflowerblue;
+}
+/*:nth-child(n+숫자) : 숫자 번째 자식요소부터 끝가지 선택*/
+ul :nth-child(n + 4) {
+    color: violet;
+}
+/*:nth-child(-n + 숫자) : 처음부터 숫자 번째 자식요소까지 선택*/
+ul :nth-child(-n + 4) {
+    color: blue;
+}
+/*:nth-child(n + 숫자) : nth-child(-n+숫자):범위로 자식요소를 선택*/
+ul :nth-child(n+2):nth-child(-n+4) {
+    color: #df1c1c;
+}
+/*nth-child(odd || even) : 홀수 또는 짝수 번째 자식 요소를 선택*/
+ul :nth-child(even) {
+    background-color: chartreuse;
+}
+ul :nth-child(odd) {
+    background-color: rgb(27, 49, 6);
+}
+/* :nth-of-type(숫자) : 해당 선택자의 n번쨰 요소에 스타일 적용*/
+.container p:nth-child(2) {
+    background-color: azure;
+}

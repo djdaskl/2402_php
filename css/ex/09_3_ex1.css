@@ -1,0 +1,15 @@
+div {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+.line-1 {
+    background: linear-gradient(45deg, white 0%, blue 20%, white);
+}
+/*색 앞에 방향을 설정하면 색 각도가 달라짐
+  ex)to top, 60deg*/
+.cir-1 {
+    height: 150px;
+    width: 150px;
+    background: radial-gradient(circle at 0% 20%, white, blue, white);
+}

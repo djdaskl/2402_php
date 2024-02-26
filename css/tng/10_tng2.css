@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    padding: 1rem;
+    background-image: url(../img/images.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+body {
+    padding: 1rem;
+}
+legend {
+    font-size: 2rem;
+    font-weight: 900;
+    color: magenta;
+}
+.require::before {
+    content: '*';
+    color: red;
+}
+input:focus, textarea:focus {
+    border: 3px solid red;
+    outline: none;
+}
+input[name="radio"]:checked + label {
+    color: red;
+}
+input, textarea {
+    background-color: transparent;
+}
+label[for="red"] {
+    vertical-align: top;
+}
+.chk-content {
+    background-color: black;
+    color: #fff;
+    display: none;
+}
+button:hover + .chk-content {
+    display: inline;
+}

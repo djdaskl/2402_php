@@ -1,0 +1,23 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+div ul li {
+    box-shadow: 0px 5px 5px 5px #4d4d4d;
+    float: left;
+    padding: 10px 20px;
+    list-style-type: none;
+    display: inline;
+    background-color: darkgray;
+    border: 1px solid rgb(23, 185, 85);
+}
+/*1~5번 요소 마우스 올릴 시 배경색 지정*/
+.nav > ul > li:not(:last-child):hover {
+    background-color: #4d4d4d;
+    color: #FFF;
+}
+/*마지막번 요소 마우스 올릴시 배경색 지정*/
+.nav > ul > li:last-child:hover {
+    background-color: red;
+    color: #FFF;
+}

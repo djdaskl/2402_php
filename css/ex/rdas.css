@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header {
+    background-color: rgb(14, 165, 127);
+    color: #fff;
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+.logo {
+    margin: 3rem auto;
+    text-align: center;
+}
+.nav_title {
+    font-weight: 900;
+    background-color: rgb(196, 247, 12);
+    padding: 0.5rem 1rem;
+}
+.nav_item {
+    padding: 0.2rem 1rem;
+}
+.nav_item:hover {
+    color: blueviolet;
+    background-color: black;
+    transition: all 2s;
+}
+.container_nav_list {
+    margin-bottom: 3rem;
+}
+.main_search {
+    height: 50px;
+}
+form {
+    padding: 5px 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.main_title {
+    background-image: url(../img/다운로드\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    background-color: aliceblue;
+}
+input[type=search] {
+    width: 80%;
+}
+.btn_search {
+    width: 40px;
+    height: 40px;
+    background-color: crimson;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+h2 {
+    color: #080808;
+    font-size: 3rem;
+}
+.main_card_list {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+.card {
+    background-color: #fff;
+    padding: 1rem;
+}
+.card_img {
+    padding-top: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1rem;
+}
+.card_info > p {
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
